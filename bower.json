@@ -5,7 +5,8 @@
   "main": [
     "src/eeh-flot.js",
     "src/eeh-flot-service.js",
-    "src/eeh-flot-directive.js"
+    "src/eeh-flot-directive.js",
+    "src/eeh-flot.css"
   ],
   "authors": [
     "Ethan Hann <ethanhann@gmail.com>"
