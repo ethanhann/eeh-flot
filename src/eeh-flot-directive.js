@@ -4,12 +4,14 @@
     function FlotDirective(eehFlot) {
         return {
             restrict: 'AE',
+            template: '<div class="eeh-flot"></div>',
             scope: {
                 dataset: '=',
                 options: '@'
             },
             link: function link(scope, element) {
-                eehFlot(element, scope.dataset, scope.options);
+                var renderArea = element.find('.eeh-flot');
+                eehFlot(renderArea, scope.dataset, scope.options);
             }
         };
     }
