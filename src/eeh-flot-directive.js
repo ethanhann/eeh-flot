@@ -14,5 +14,5 @@
         };
     }
 
-    angular.module('eeh-flot').directive('eehFlot', FlotDirective);
+    angular.module('eehFlot').directive('eehFlot', FlotDirective);
 })(angular);

@@ -11,5 +11,5 @@
         return $window.jQuery.plot;
     }
 
-    angular.module('eeh-flot').service('eehFlot', FlotService);
+    angular.module('eehFlot').service('eehFlot', FlotService);
 })(angular);
