@@ -8,15 +8,14 @@
             scope: {
                 dataset: '=',
                 options: '@',
-                updateCallback: '&',
+                updateCallback: '=',
                 updateCallbackTime: '@'
             },
             link: function link(scope, element) {
-                scope.updateCallbackTime = scope.updateCallbackTime || 1000;
+                scope.updateCallbackTime = scope.updateCallbackTime || 40;
                 var renderArea = element.find('.eeh-flot');
                 var chart = eehFlot(renderArea, scope.dataset, scope.options);
-                if (angular.isDefined(scope.updateCallback) &&
-                    angular.isFunction(scope.updateCallback)) {
+                if (angular.isFunction(scope.updateCallback)) {
                     $interval(function() {
                         scope.updateCallback(chart, scope.dataset);
                     }, scope.updateCallbackTime);
