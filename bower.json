@@ -1,6 +1,6 @@
 {
   "name": "eeh-flot",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An AngularJS directive that wraps the jQuery Flot charts library.",
   "main": [
     "src/eeh-flot.js",
